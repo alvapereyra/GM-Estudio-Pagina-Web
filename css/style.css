@@ -304,4 +304,9 @@ form{
         font-size: 15px;
     }
     
+    .ajuste div img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
 }
