@@ -11,7 +11,7 @@ header{
 }  
 
 body{
-    background-color: antiquewhite;
+    background-color: beige;
 }
 
 .navbar{
@@ -205,9 +205,15 @@ form{
 	}
     .botonera{
         display: flex;
-	    flex-direction: column;
 	    align-items: center;
-	    justify-content: center;
+	    justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 12px;
     }
 
     .parent{
@@ -260,9 +266,8 @@ form{
 
     .botonera{
         display: flex;
-	    flex-direction: column;
 	    align-items: center;
-	    justify-content: center;
+	    justify-content: space-between;
     }
 
     .footp {
@@ -324,6 +329,7 @@ form{
     nav ul{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     nav ul li{
