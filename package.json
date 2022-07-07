@@ -1,0 +1,25 @@
+{
+  "name": "gm-estudio-pagina-web",
+  "version": "1.0.0",
+  "description": "Pagina Web GM Estudio (Estudio de ingenieros)\r Pagina Web destinada al conocimiento y a la ampliación del alcance del estudio de ingenieros, Gamez y Moruno. Estudio de Ingenieros de Mendoza especializados en el asesoramiento técnico a profesionales de la arquitectura y a empresas constructoras nacionales e internacionales en el rubro estructuras.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvapereyra/GM-Estudio-Pagina-Web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvapereyra/GM-Estudio-Pagina-Web/issues"
+  },
+  "homepage": "https://github.com/alvapereyra/GM-Estudio-Pagina-Web#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

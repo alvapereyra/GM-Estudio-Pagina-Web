@@ -1,0 +1,133 @@
+
+body{
+    background-color: beige;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px $colorA;
+	background-color:$colorA;
+	border-radius:6px;
+	border:1px solid $colorA;
+	display:inline-block;
+	cursor:pointer;
+	color:$colorC;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px $colorC;
+    text-transform: up;
+}
+.myButton a{
+    color: white;
+    text-decoration:none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+form{
+    background-image: url(../img/pattern.jpg);
+}
+
+.flexesp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.padre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 3 / 1 / 4 / 2; }
+.div8 { grid-area: 3 / 2 / 4 / 3; }
+.div9 { grid-area: 3 / 3 / 4 / 4; }
+
+.parent div img, .padre div img{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+
+.imging{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgindex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+#header{
+	grid-area: header;
+}
+
+#nav{
+	grid-area: nav;
+}
+
+#main{
+	grid-area: main;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+.transition{
+	width: 275px;
+	background-color: $colorA;
+	transition: all 2s;
+}
+
+.transition:hover{
+	width: 200px;
+	background-color: $colorA;
+	cursor: pointer;
+}
+
+.scale:hover{
+	transform: scale(1.2, 1.2);
+	cursor: pointer;
+}

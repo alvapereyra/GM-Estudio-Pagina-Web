@@ -1,0 +1,15 @@
+footer {
+    background-color: $colorB;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+        color: $colorA;
+        text-decoration: none;
+        margin-left: 1%;
+        &:hover {
+            color: $colorC;
+            font-weight: 600;
+        }
+    }
+}
