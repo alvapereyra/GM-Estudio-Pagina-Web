@@ -9,9 +9,7 @@
 		"footer footer";
 	}
     .botonera{
-        display: flex;
-	    align-items: center;
-	    justify-content: space-between;
+        @include flexH(space-between, center)
     }
 
     nav ul{
@@ -70,16 +68,11 @@
 	}
 
     .botonera{
-        display: flex;
-	    align-items: center;
-	    justify-content: space-between;
+        @include flexH(space-between, center);
     }
 
     .footp {
-        display: flex;
-        flex-direction: column;
-        align-items: space-around;
-        justify-content: center;
+        @include flexP(center, space-around, column)
     }
 
     .parent{
@@ -107,8 +100,7 @@
     }
     
     .flexesp{
-        display: flex;
-        justify-content: space-around;
+        @include flex(space-around);
     }
 
     .ancho{

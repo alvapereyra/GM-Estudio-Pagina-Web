@@ -5,17 +5,14 @@
 }
 
 header {
-    background-color: $colorB;
+    background-color: map-get($map: $mapa , $key:dos);
     nav {
         margin: auto;
-        display: flex;
-        justify-content: space-between;
+        @include flex(space-between);
         ul {
             list-style: none;
-            display: flex;
-            justify-content: space-between;
+            @include flex(space-between);
             width: 75vw;
-            align-items: center;
             margin-right: 5%;
             li {
                 text-decoration: none;

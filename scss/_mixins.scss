@@ -1,0 +1,24 @@
+@mixin flex($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+
+@mixin flexP($justify, $align, $direction){
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+
+@mixin flexH($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+$mapa: (
+    'uno': #4D393B,
+    'dos': #EAE9BB,
+    'tres': black,
+    'cuatro':beige,
+);

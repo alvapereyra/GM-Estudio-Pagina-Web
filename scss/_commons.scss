@@ -1,13 +1,11 @@
 
 body{
-    background-color: beige;
+    background-color: map-get($map: $mapa , $key:cuatro);
 }
 
 .myButton {
 	box-shadow:inset 0px 1px 0px 0px $colorA;
 	background-color:$colorA;
-	border-radius:6px;
-	border:1px solid $colorA;
 	display:inline-block;
 	cursor:pointer;
 	color:$colorC;
@@ -19,6 +17,13 @@ body{
 	text-shadow:0px 1px 0px $colorC;
     text-transform: up;
 }
+
+.buttonRedondo{
+	@extend .myButton;
+	border-radius:6px;
+	border:1px solid $colorA;
+}
+
 .myButton a{
     color: white;
     text-decoration:none;
@@ -37,8 +42,7 @@ form{
 }
 
 .flexesp{
-    display: flex;
-    justify-content: space-between;
+	@include flex(space-between);
 }
 
 .flex{
@@ -81,15 +85,11 @@ form{
 
 
 .imging{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	@include flexP(center, center, column)
 }
 
 .imgindex{
-    display: flex;
-    justify-content: space-evenly;
+	@include flex(space-evenly);
 }
 
 .contenedor{
