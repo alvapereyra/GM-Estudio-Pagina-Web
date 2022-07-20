@@ -14,7 +14,7 @@ header {
       list-style: none;
       display: flex;
       justify-content: space-between;
-      width: 75vw;
+      width: 77vw;
       margin-right: 5%; }
       header nav ul li {
         text-decoration: none;
@@ -33,6 +33,12 @@ header {
 
 body {
   background-color: beige; }
+
+.margp {
+  margin-top: 25px; }
+
+.margp2 {
+  margin-top: 12px; }
 
 .myButton, .buttonRedondo {
   box-shadow: inset 0px 1px 0px 0px #4D393B;
@@ -66,12 +72,25 @@ body {
 form {
   background-image: url(../img/pattern.jpg); }
 
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+textarea {
+  resize: none; }
+
 .flexesp {
   display: flex;
   justify-content: space-between; }
 
 .flex {
   display: flex; }
+
+.flex3 {
+  display: flex;
+  justify-content: space-between; }
 
 .parent {
   display: grid;
@@ -162,6 +181,28 @@ form {
   transform: scale(1.2, 1.2);
   cursor: pointer; }
 
+.anchop {
+  max-width: 900px; }
+
+.pad {
+  padding: 5px;
+  width: 20%;
+  margin-top: 10px; }
+
+.pad1 {
+  padding: 2px;
+  width: 100%;
+  margin: 3px 10px 6px;
+  font-weight: bold; }
+
+.pad1:hover {
+  background-color: #EAE9BB; }
+
+.marg {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #EAE9BB; }
+
 footer {
   background-color: #EAE9BB;
   display: flex;
@@ -175,7 +216,10 @@ footer {
       color: black;
       font-weight: 600; }
 
-@media (max-width: 992px) {
+.footerimg {
+  margin-left: 4px; }
+
+@media (max-width: 991px) {
   .contenedor {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);

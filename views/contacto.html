@@ -43,78 +43,26 @@
             </nav>
         </header>
         <main id="main">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/slide1.png" class="d-block w-100" alt="slide1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/slide2.png" class="d-block w-100" alt="slide2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/slide3.png" class="d-block w-100" alt="slide3">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <br>
-            <h1 class="text-center">CONTACTO</h1>
-            <br>
-            <section>
-                <form action="action.php" class="text-center" id="contacto">
+            <h1 class="text-center margp"><strong>CONTACTO</strong></h1>
+            <section class="margp">
+                <form action="action.php" id="contacto">
                     <fieldset>
-                        <legend>
-                            <h2>COMUNICATE CON NOSOTROS</h2>
+                        <legend class="marg">
+                            <h2 class="text-center">COMUNICATE CON NOSOTROS</h2>
                         </legend>
-                        <br>
-                        <label for="Nombre y apellido">Nombre y apellido</label>
-                        <input type="text" id="Nombre y apellido" placeholder="Indique su nombre y apellido">
-                        <br>
-                        <br>
-                        <label for="Email">Email</label>
-                        <input type="email" id="Email" placeholder="Indique su mail">
-                        <br>
-                        <br>
-                        <label for="Telefono">Telefono</label>
-                        <input type="telefono" id="Telefono" placeholder="Indique su telefono">
-                        <br>
-                        <br>
-                        <legend>¿Sos mayor de 18 años?</legend>
-                        <label for="Mayor de 18 años">Si</label>
-                        <input type="radio" name="18" id="Mayor de 18 años" value="Si">
-                        <label for="Mayor de 18 años">No</label>
-                        <input type="radio" name="18" id="Mayor de 18 años" value="Si">
-                        <br>
-                        <br>
-                        <label for="mensaje">Mensaje</label>
-                        <br>
-                        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-                        <br>
-                        <input type="reset" value="Cancelar">
-                        <input type="submit" value="Enviar">
+                        <input type="text" id="Nombre y apellido" placeholder="Nombre y apellido" class="pad">
+                        <input type="email" id="Email" placeholder="Mail" class="pad">
+                        <input type="telefono" id="Telefono" placeholder="Telefono" class="pad">
+                        <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Indique su mensaje" class="pad"></textarea>
+                        <div class="flex3">
+                            <input type="reset" value="Cancelar" class="pad1">
+                            <input type="submit" value="Enviar" class="pad1">
+                        </div>
                     </fieldset>
                 </form>
             </section>
-            <br>
         </main>
-        <footer id="footer" class="footp">
+        <footer id="footer" class="footp margp">
             <div>
                 <div>
                     <a href="../views/contacto.html">
@@ -123,13 +71,13 @@
                 </div>
                 <div class="flex">
                     <img src="../img/Email.png" alt="email" width="30" height="30">
-                    <h4>
+                    <h4 class="footerimg">
                         <b>gmestudio@gmail.com</b>
                     </h4>
                 </div>
                 <div class="flex">
                     <img src="../img/Telefono.png" alt="telefono" width="30" height="30">
-                    <h4>
+                    <h4 class="footerimg">
                         <b>2615337365</b>
                     </h4>
                 </div>
@@ -162,5 +110,4 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

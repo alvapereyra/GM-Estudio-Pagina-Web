@@ -3,6 +3,14 @@ body{
     background-color: map-get($map: $mapa , $key:cuatro);
 }
 
+.margp{
+	margin-top: 25px;
+}
+
+.margp2{
+	margin-top: 12px;
+}
+
 .myButton {
 	box-shadow:inset 0px 1px 0px 0px $colorA;
 	background-color:$colorA;
@@ -41,12 +49,28 @@ form{
     background-image: url(../img/pattern.jpg);
 }
 
+fieldset{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+textarea{
+	resize: none;
+}
+
 .flexesp{
 	@include flex(space-between);
 }
 
 .flex{
     display: flex;
+}
+
+.flex3{
+    display: flex;
+	justify-content: space-between;
 }
 
 .parent {
@@ -131,4 +155,33 @@ form{
 .scale:hover{
 	transform: scale(1.2, 1.2);
 	cursor: pointer;
+}
+
+.anchop{
+	max-width: 900px;
+}
+
+.pad{
+	padding: 5px;
+	width: 20%;
+	margin-top: 10px;
+}
+
+.pad1{
+	padding: 2px;
+	width: 100%;
+	margin: 3px 10px 6px;
+	font-weight: bold;
+}
+
+.pad1{
+	&:hover{
+		background-color: $colorB;
+	}
+}
+
+.marg{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: $colorB;
 }
