@@ -55,6 +55,21 @@
         display: flex;
         flex-direction: column;
     }
+
+    .imgindex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexesp{
+        @include flex(space-around);
+    }
+
+    .ancho{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 768px){

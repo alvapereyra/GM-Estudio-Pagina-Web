@@ -101,13 +101,27 @@ textarea{
 .div8 { grid-area: 3 / 2 / 4 / 3; }
 .div9 { grid-area: 3 / 3 / 4 / 4; }
 
-.parent div img, .padre div img{
-    max-width: 100%;
-    min-height: 100%;
-	min-width: 100%;
-    object-fit: cover;
+.parent{
+	div{
+		img{
+			max-width: 100%;
+    		min-height: 100%;
+			min-width: 100%;
+    		object-fit: cover;
+		}
+	}
 }
 
+.padre{
+	div{
+		img{
+			max-width: 100%;
+    		min-height: 100%;
+			min-width: 100%;
+    		object-fit: cover;
+		}
+	}
+}
 
 .imging{
 	@include flexP(center, center, column)
