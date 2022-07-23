@@ -107,31 +107,49 @@ textarea {
   grid-row-gap: 0px; }
 
 .div1 {
-  grid-area: 1 / 1 / 2 / 2; }
+  grid-area: 1 / 1 / 2 / 2;
+  position: relative;
+  text-align: center; }
 
 .div2 {
-  grid-area: 1 / 2 / 2 / 3; }
+  grid-area: 1 / 2 / 2 / 3;
+  position: relative;
+  text-align: center; }
 
 .div3 {
-  grid-area: 1 / 3 / 2 / 4; }
+  grid-area: 1 / 3 / 2 / 4;
+  position: relative;
+  text-align: center; }
 
 .div4 {
-  grid-area: 2 / 1 / 3 / 2; }
+  grid-area: 2 / 1 / 3 / 2;
+  position: relative;
+  text-align: center; }
 
 .div5 {
-  grid-area: 2 / 2 / 3 / 3; }
+  grid-area: 2 / 2 / 3 / 3;
+  position: relative;
+  text-align: center; }
 
 .div6 {
-  grid-area: 2 / 3 / 3 / 4; }
+  grid-area: 2 / 3 / 3 / 4;
+  position: relative;
+  text-align: center; }
 
 .div7 {
-  grid-area: 3 / 1 / 4 / 2; }
+  grid-area: 3 / 1 / 4 / 2;
+  position: relative;
+  text-align: center; }
 
 .div8 {
-  grid-area: 3 / 2 / 4 / 3; }
+  grid-area: 3 / 2 / 4 / 3;
+  position: relative;
+  text-align: center; }
 
 .div9 {
-  grid-area: 3 / 3 / 4 / 4; }
+  grid-area: 3 / 3 / 4 / 4;
+  position: relative;
+  text-align: center; }
 
 .parent div img {
   max-width: 100%;
@@ -179,7 +197,7 @@ textarea {
   transition: all 2s; }
 
 .transition:hover {
-  width: 200px;
+  width: 100%;
   background-color: #4D393B;
   cursor: pointer; }
 
@@ -208,6 +226,18 @@ textarea {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #EAE9BB; }
+
+.tf {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
 footer {
   background-color: #EAE9BB;
