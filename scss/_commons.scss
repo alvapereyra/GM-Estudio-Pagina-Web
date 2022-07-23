@@ -243,3 +243,7 @@ textarea{
 	font-weight: bolder;
 	@include flexP(center, center, column);
 }
+
+.anch{
+	min-width: 140px;
+}
