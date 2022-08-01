@@ -3,6 +3,15 @@ body{
     background-color: map-get($map: $mapa , $key:cuatro);
 }
 
+.colora{
+	background-color: $colorA;
+}
+
+.flexing{
+	@include flexP(center, center, column);
+	margin-top: 150px;
+}
+
 .margp{
 	margin-top: 25px;
 }
@@ -220,11 +229,27 @@ textarea{
 	width: 100%;
 	margin: 3px 10px 6px;
 	font-weight: bold;
+	a{
+		text-decoration: none;
+		color: black;
+	}
 }
 
 .pad1{
 	&:hover{
 		background-color: $colorB;
+	}
+}
+
+.pad3{
+	padding: 2px;
+	font-weight: bold;
+	background-color: $colorB;
+	margin-left: 50%;
+	margin-top: 100px;
+	a{
+		text-decoration: none;
+		color: black;
 	}
 }
 
@@ -246,4 +271,13 @@ textarea{
 
 .anch{
 	min-width: 140px;
+}
+
+button{
+	a{
+		min-height: 100%;
+		min-width: 100%;
+		max-width: 100%;
+		max-height: 100%;
+	}
 }

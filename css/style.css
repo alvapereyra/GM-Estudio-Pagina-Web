@@ -34,6 +34,16 @@ header {
 body {
   background-color: beige; }
 
+.colora {
+  background-color: #4D393B; }
+
+.flexing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px; }
+
 .margp {
   margin-top: 25px; }
 
@@ -218,9 +228,22 @@ textarea {
   width: 100%;
   margin: 3px 10px 6px;
   font-weight: bold; }
+  .pad1 a {
+    text-decoration: none;
+    color: black; }
 
 .pad1:hover {
   background-color: #EAE9BB; }
+
+.pad3 {
+  padding: 2px;
+  font-weight: bold;
+  background-color: #EAE9BB;
+  margin-left: 50%;
+  margin-top: 100px; }
+  .pad3 a {
+    text-decoration: none;
+    color: black; }
 
 .marg {
   margin-top: 10px;
@@ -241,6 +264,12 @@ textarea {
 
 .anch {
   min-width: 140px; }
+
+button a {
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%; }
 
 footer {
   background-color: #EAE9BB;
@@ -393,4 +422,7 @@ footer {
     max-height: 100%;
     object-fit: cover; }
   .margp3 {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .imgcons {
+    width: 300px;
+    height: 128px; } }
