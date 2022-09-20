@@ -30,7 +30,9 @@ do{
             ubicacion = prompt("Ingrese la ubicación donde desea construir: ");
             mCuadradosDeseados = Number(prompt("Ingrese la cantidad de metros cuadrados que desea construir: "));
             cotizador();
-            alert("La construcción que desea construir en "+ubicacion+" tiene un valor aproximado entre mano de obra y materiales (sin honorarios) de $"+precioTotalMCuadrados+" para mas información contactarse al 2615788821")
+            let informacion = document.getElementById("appl");
+            informacion.innerText = "Hola "+nombre+" la construcción que desea construir en "+ubicacion+" tiene un valor aproximado entre mano de obra y materiales (sin honorarios) de $"+precioTotalMCuadrados+" para mas información contactarse al 2615788821";
+            // alert("La construcción que desea construir en "+ubicacion+" tiene un valor aproximado entre mano de obra y materiales (sin honorarios) de $"+precioTotalMCuadrados+" para mas información contactarse al 2615788821")
             repetir = false;
             break;
     
@@ -40,7 +42,9 @@ do{
             cantidadInspectores = Number(prompt ("Ingrese la cantidad de inspectores que necesita: "));
             horasXInspector = Number(prompt ("Ingrese la cantidad de horas que inspeccionara cada inspector su construcción: "));
             inspeccion();
-            alert("La construcción que desea construir en "+ubicacion+" tiene un valor de inspección de $"+precioInspeccion+" aproximadamente, para mas información contactarse al 2615788821")
+            let informacion1 = document.getElementById("appl");
+            informacion1.innerText = "Hola "+nombre+" la construcción que desea construir en "+ubicacion+" tiene un valor de inspección de $"+precioInspeccion+" aproximadamente, para mas información contactarse al 2615788821"
+            // alert("La construcción que desea construir en "+ubicacion+" tiene un valor de inspección de $"+precioInspeccion+" aproximadamente, para mas información contactarse al 2615788821")
             repetir = false;
             break;
 
