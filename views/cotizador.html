@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Somos un grupo de profesionales de la ingeniería civil, especializados en el asesoramiento técnico a profesionales de la arquitectura y a empresas constructoras nacionales e internacionales en el rubro estructuras">
+    
+    <meta name="description" content="Cotizador estructuración y inspección de obras">
     <meta name="author" content="Alvaro Pereyra">
     <meta name="keywords" content="construccion, ingeniria civil, ingenieria, ingenieros mendoza, calculo, chacras park, construccion bodegas, diplomatic, torres agustinas, estructuración, hidraulica, puentes, inspección de obras">
-    <title>GM Estudio - ¿Quienes somos?</title>
-
+    <title>GM Estudio - Cotizador</title>
+    
     <link rel="shortcut icon" href="../img/GMEstudioFI.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="contenedor">
@@ -42,22 +43,62 @@
             </nav>
         </header>
         <main id="main">
-            <h1 class="text-center margp"><strong>¿QUIENES SOMOS?</strong></h1>
-            <figure class="imging ajuste text-center margp" width="600">
-                <div>
-                    <img src="../img/ing.jpg" alt="ingenieros" width="600" height="400">
-                    <figcaption class="text-center anchop"> <strong>Somos un grupo de profesionales de la ingeniería civil,
-                            especializados en el asesoramiento técnico a profesionales de la arquitectura y a empresas
-                            constructoras nacionales e internacionales en el rubro estructuras.
-                            Nuestra trayectoria en obras de diferente envergadura, tanto del ámbito privado como el
-                            público, nos da los conocimientos y la experiencia para brindar los mejores resultados.
-                            El cumplimiento en tiempo y forma de las necesidades de nuestros clientes es parte de su
-                            satisfacción y es por esto que enfocamos nuestra energía y recursos en lograrla. Para ello
-                            nos apoyamos en nuestra capacidad, experiencia y espíritu de superación, respaldados por
-                            nuestra sólida trayectoria.</strong>
-                    </figcaption>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-            </figure>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/Vmontaña1.png" class="d-block w-100" alt="slide1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/Vmontaña2.png" class="d-block w-100" alt="slide2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/Vmontaña3.png" class="d-block w-100" alt="slide3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="text-center margp"><strong>COTIZADOR</strong></h1>
+            <section class="margp">
+                <form action="action.php" id="contacto">
+                    <fieldset>
+                        <legend class="marg">
+                            <h2 class="text-center">COTIZADOR ESTRUCTURACIÓN</h2>
+                        </legend>
+                        <input type="text" id="Nombre y apellido" name="Nombre y apellido" placeholder="Nombre y apellido" class="pad anch">
+                        <input type="email" id="Email" name="Email" placeholder="Mail" class="pad anch">
+                        <input type="number" id="Telefono" name="Telefono" placeholder="Telefono" class="pad anch">
+                        <input type="text" id="Ubicacion" name="Ubicacion" placeholder="Ubicacion" class="pad anch">
+                        <input type="number" id="mCuadradosDeseados" name="mCuadradosDeseados" placeholder="Metros cuadrados que desea construir" class="pad anch">
+                        <textarea name="" id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Descripción" class="pad anch"></textarea>
+                        <div class="flex3">
+                            <button class="pad1" type="reset">Cancelar</button>
+                            <!-- <input type="reset" value="Cancelar" class="pad1"> -->
+                            <button class="pad1" type="submit">Enviar</button>
+                            <!-- <input type="submit" value="Enviar" class="pad1"> -->
+                        </div>
+                        <div id="app">
+                            <p id="appl" class="white"></p>
+                        </div> 
+                    </fieldset>
+                </form>
+            </section>
         </main>
         <footer id="footer" class="footp margp">
             <div>
@@ -102,6 +143,7 @@
             </div>
         </footer>
     </div>
+    <script src="../js/cotizador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
