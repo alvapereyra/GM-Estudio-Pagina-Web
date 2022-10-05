@@ -17,7 +17,8 @@ const validarFormulario = form.addEventListener('submit', (e) => {
     const metrosCuadradosDeseados = mCuadradosDeseados.value;
     const descripcion1 = descripcion.value;
     calculador(metrosCuadradosDeseados);
-    nombre === "" || email === "" || nroTelefono === "" || ubi === "" || metrosCuadradosDeseados === "" || descripcion1 === "" ? fracaso() : exito ();
+
+    nombre === "" || email === "" || nroTelefono === "" || ubi === "" || metrosCuadradosDeseados === "" || descripcion1 === "" ? fracaso() : exito (nombre, email, nroTelefono, ubi, metrosCuadradosDeseados, descripcion1, precioTotal);
 });
 
 let calculador = (metrosCuadradosDeseados) => {
@@ -25,7 +26,7 @@ let calculador = (metrosCuadradosDeseados) => {
     precioTotal = precioMCuadrado*metrosCuadradosDeseados;
 };
 
-let exito = () => {
+let exito = (nombre, email, nroTelefono, ubi, metrosCuadradosDeseados, descripcion1, precioTotal) => {
     Swal.fire({
         icon: "success",
         title: "Éxito!",
@@ -39,7 +40,7 @@ let exito = () => {
     sessionStorage.setItem("Ubicacion", ubi);
     sessionStorage.setItem("Metros cuadrados", metrosCuadradosDeseados);
     sessionStorage.setItem("Descripción", descripcion1);
-}
+};
 
 let fracaso = () => {
     Swal.fire({
@@ -47,4 +48,4 @@ let fracaso = () => {
         title: "Error!",
         text: "Los datos del formulario no pueden estar vacíos",
     })
-}
+};
