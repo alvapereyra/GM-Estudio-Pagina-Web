@@ -17,20 +17,7 @@ const validarFormulario = form.addEventListener('submit', (e) => {
     const metrosCuadradosDeseados = mCuadradosDeseados.value;
     const descripcion1 = descripcion.value;
     calculador(metrosCuadradosDeseados);
-    Swal.fire({
-        icon: "success",
-        title: "Éxito!",
-        text: "El formulario ha sido enviado",
-    })
-    let informacion = document.getElementById("appl");
-    informacion.innerText = "Hola "+nombre+" la construcción que desea construir en "+ubi+" tiene un valor aproximado entre mano de obra y materiales (sin honorarios) de $"+precioTotal+" para mas información contactarse al 2615788821";
-
-    sessionStorage.setItem("Nombre", nombre);
-    sessionStorage.setItem("Email", email);
-    sessionStorage.setItem("nroTelefono", nroTelefono);
-    sessionStorage.setItem("Ubicacion", ubi);
-    sessionStorage.setItem("Metros cuadrados", metrosCuadradosDeseados);
-    sessionStorage.setItem("Descripción", descripcion1);
+    nombre === "" || email === "" || nroTelefono === "" || ubi === "" || metrosCuadradosDeseados === "" || descripcion1 === "" ? fracaso() : exito ();
 });
 
 let calculador = (metrosCuadradosDeseados) => {
@@ -38,3 +25,26 @@ let calculador = (metrosCuadradosDeseados) => {
     precioTotal = precioMCuadrado*metrosCuadradosDeseados;
 };
 
+let exito = () => {
+    Swal.fire({
+        icon: "success",
+        title: "Éxito!",
+        text: "El formulario ha sido enviado",
+    })
+    let informacion = document.getElementById("appl");
+    informacion.innerText = "Hola "+nombre+" la construcción que desea construir en "+ubi+" tiene un valor aproximado entre mano de obra y materiales (sin honorarios) de $"+precioTotal+" para mas información contactarse al 2615788821";
+    sessionStorage.setItem("Nombre", nombre);
+    sessionStorage.setItem("Email", email);
+    sessionStorage.setItem("nroTelefono", nroTelefono);
+    sessionStorage.setItem("Ubicacion", ubi);
+    sessionStorage.setItem("Metros cuadrados", metrosCuadradosDeseados);
+    sessionStorage.setItem("Descripción", descripcion1);
+}
+
+let fracaso = () => {
+    Swal.fire({
+        icon: "error",
+        title: "Error!",
+        text: "Los datos del formulario no pueden estar vacíos",
+    })
+}
