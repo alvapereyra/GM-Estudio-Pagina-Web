@@ -11,6 +11,7 @@
     <meta name="keywords" content="construccion, ingeniria civil, ingenieria, ingenieros mendoza, calculo, chacras park, construccion bodegas, diplomatic, torres agustinas, estructuración, hidraulica, puentes, inspección de obras">
     <title>GM Estudio - Contacto</title>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="shortcut icon" href="../img/GMEstudioFI.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -46,20 +47,23 @@
         <main id="main">
             <h1 class="text-center margp"><strong>CONTACTO</strong></h1>
             <section class="margp">
-                <form action="action.php" id="contacto">
+                <form action="action.php" id="contactanos">
                     <fieldset>
                         <legend class="marg">
                             <h2 class="text-center">COMUNICATE CON NOSOTROS</h2>
                         </legend>
-                        <input type="text" id="Nombre y apellido" placeholder="Nombre y apellido" class="pad anch">
-                        <input type="email" id="Email" placeholder="Mail" class="pad anch">
-                        <input type="telefono" id="Telefono" placeholder="Telefono" class="pad anch">
-                        <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Indique su mensaje" class="pad anch"></textarea>
+                        <input type="text" id="NyA" placeholder="Nombre y apellido" class="pad anch">
+                        <input type="email" id="mail" placeholder="Mail" class="pad anch">
+                        <input type="number" id="Tel" placeholder="Telefono" class="pad anch">
+                        <textarea name="" id="mensaje1" cols="30" rows="10" placeholder="Indique su mensaje" class="pad anch"></textarea>
                         <div class="flex3">
                             <button class="pad1" type="reset">Cancelar</button>
                             <!-- <input type="reset" value="Cancelar" class="pad1"> -->
-                            <button class="pad1"><a href="../views/notfound.html">Enviar</a></button>
+                            <button class="pad1" type="submit">Enviar</button>
                             <!-- <input type="submit" value="Enviar" class="pad1"> -->
+                        </div>
+                        <div>
+                            <p id="inner" class="white"></p>
                         </div>
                     </fieldset>
                 </form>
@@ -109,6 +113,7 @@
         </footer>
     </div>
 
+    <script src="../js/formularioContacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
